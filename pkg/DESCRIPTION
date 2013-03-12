@@ -16,5 +16,5 @@ Suggests:
     frma
 biocViews: ExperimentData, RNAExpressionData, Cancer, NormalTissue
 Collate:
-    'antiProfilesData-package.r'
     'apData_gpl570.r'
+    'colonData.r'

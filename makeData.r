@@ -15,25 +15,17 @@ annotation(apData_gpl570) <- "hgu133plus2"
 
 if (!file.exists("pkg/data"))
   dir.create("pkg/data")
-save(apData_gpl570, file="pkg/data/apData_gpl570.rda")
+save(apData_gpl570, file="apData_gpl570.rda")
 
 
-ii=apDataPlus2$ExperimentID %in% c("GSE8671","GSE4183") & goodIndex & !(is.na(tab$Status))
-colonTab=tab[ii,]
-colonExpr=zscores[,ii]
-
+ii=apData_gpl570$ExperimentID %in% c("GSE8671","GSE4183")
+colonData=apData_gpl570[,ii]
 
 # look at probesets in blocks
 load(file.path(expDir,"rdas/anno.rda"))
 
 blockIds=subset(anno,inBlock)$affyid
-blockExpr=colonExpr[blockIds,]
-
-rownames(colonTab)=colonTab$DB_ID
-colnames(blockExpr)=colonTab$DB_ID
-
-colonData=ExpressionSet(assayData=blockExpr,phenoData=AnnotatedDataFrame(colonTab))
-
+colonData=colonData[blockIds,]
 save(colonData, file="pkg/data/colonData.rda")
 
 
