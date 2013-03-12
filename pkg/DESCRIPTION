@@ -18,3 +18,4 @@ biocViews: ExperimentData, RNAExpressionData, Cancer, NormalTissue
 Collate:
     'apData_gpl570.r'
     'colonData.r'
+    'antiProfilesData-package.r'

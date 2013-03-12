@@ -17,7 +17,7 @@
 #'
 #' @references
 #'   Corrada Bravo, H., Pihur, V., McCall, M., Irizarry, R.A., Leek, J.T. (2012). "Gene expression anti-profiles as a basis for accurate universal cancer signatures" BMC Bioinformatics, 13:272
-#' @name colonData
+#' @name apColonData
 #' @docType data
 NULL
 

@@ -19,14 +19,14 @@ save(apData_gpl570, file="apData_gpl570.rda")
 
 
 ii=apData_gpl570$ExperimentID %in% c("GSE8671","GSE4183")
-colonData=apData_gpl570[,ii]
+apColonData=apData_gpl570[,ii]
 
 # look at probesets in blocks
 load(file.path(expDir,"rdas/anno.rda"))
 
 blockIds=subset(anno,inBlock)$affyid
-colonData=colonData[blockIds,]
-save(colonData, file="pkg/data/colonData.rda")
+apColonData=apColonData[blockIds,]
+save(apColonData, file="pkg/data/apColonData.rda")
 
 
 
