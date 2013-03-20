@@ -17,7 +17,7 @@
 #' data(apColonData)
 #' pData(apColonData)
 #'
-#' @seealso \code{\link{ExpressionSet}} for the class definition, \code{\link[frma]{frma}} for the preprocessing method used, \code{\link[frma]{barcode}} for the function to obtain the z-score definition, \code{\link[antiProfiles]{apStats}} and \code{\link[antiProfiles]{buildAntiProfile}} for methods to build anti-profiles from this data.
+#' @seealso \code{\link{ExpressionSet}} for the class definition, \code{\link[frma]{frma}} for the preprocessing method used, \code{\link[frma]{barcode}} for the function to obtain the z-score definition.
 #'
 #' @references
 #'   Corrada Bravo, H., Pihur, V., McCall, M., Irizarry, R.A., Leek, J.T. (2012). "Gene expression anti-profiles as a basis for accurate universal cancer signatures" BMC Bioinformatics, 13:272
